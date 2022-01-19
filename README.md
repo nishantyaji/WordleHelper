@@ -2,18 +2,18 @@
 
 This is a rudimentary helper for Wordle game. (https://en.wikipedia.org/wiki/Wordle_(video_game))
 
-While attempting the game/puzzle we come to know about some letters being present in the word but in wrong position - through the color coding of yellow for such letters. The letters that have been guessed in the correct position are graded in green color.
+While attempting the game/puzzle you come to know about some letters being present in the word but in wrong position - through the color coding of yellow for such letters. The letters that have been guessed in the correct position are graded in green color.
 
-Using this information we can narrow down the possible combination of letters.
+Using this information you can narrow down the possible combination of letters.
 
-Suppose we are sure that the 2nd letter is E and the 4th letter is E. And we know that T is in the word but we guessed that the position was 5th letter - and our guess about the position was wrong even though the letter is the word (evidence in yellow colored cell)
+Suppose you are sure that the 2nd letter is E and the 4th letter is E. And you know that T is in the word but you guessed wrong that the position was the 5th letter - this correctness in the letter but wrongness in the position is evidenced in yellow colored cell encompassing the letter.
 
-We, can see, through either common sense or running in our mind that the answer fits into one of the formats
+For this case mentioned in the above para, you can see, through either common sense or jogging your mind, that the answer fits into one of the formats:
 
 - T E _ E _
 - _ E T E _
 
-This rudimentary program automates the display of the possibilites but taking in the input about the letters, their correct position (for the green colored cells) or their wrong position (for the yellow colored cells).
+This rudimentary program automates the display of such possibilites by taking in the input about the letters, with their correct position (for the green colored cells) or their wrong position (for the yellow colored cells).
 
 ## Usage
 
