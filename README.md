@@ -42,7 +42,7 @@ sure E 1
 sure T 2
 ```
 
-Note that the position is always 1 less that order - i.e. the position is the array ordinal
+Note that the position is always 1 less than the counting order - i.e. the position is equal to the array ordinal
 
 ### UNSURE
 
