@@ -2,15 +2,12 @@ from operator import length_hint
 
 
 class Container:
-    word = []
-    length = 0
-    unsureWrongIdxMap = {}
-    blankChar = "_"
-
-    def __init__(self) -> None:
-        pass
 
     def __init__(self, len) -> None:
+        self.word = []
+        self.length = 0
+        self.unsureWrongIdxMap = {}
+        self.blankChar = "_"
         self.length = len
         self.word = self.length * [None]
 
@@ -31,6 +28,11 @@ class Container:
     def sureLetter(self, letter, correctIdx):
         self.checkIndex(correctIdx)
         self.word[correctIdx] = letter
+
+    def reduce(self):
+        for i in self.word:
+            if i != None and i in self.unsureWrongIdxMap.keys():
+                del self.unsureWrongIdxMap[i]
 
     def getPossibilities(self):
         possibilities = []
@@ -62,8 +64,8 @@ class Container:
 if __name__ == "__main__":
     c = Container(5)
     c.unsureLetter("O", 1)
-    c.unsureLetter("T", 0)
-    c.unsureLetter("S", 3)
+    c.sureLetter("S", 3)
+    c.sureLetter("L", 1)
     possibilities = c.getPossibilities()
     for possibility in possibilities:
         print(possibility)
