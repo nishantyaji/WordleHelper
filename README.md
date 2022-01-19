@@ -32,7 +32,7 @@ There are 6 functionalities present
 - RESET
 - QUIT/LOGOUT/EXIT
 
-# SURE
+### SURE
 
 When you are sure of a letter and its position, you enter the info through this command.
 Suppose you are that E is the second letter and T is the third letter you enter the following in the console
@@ -44,7 +44,7 @@ sure T 2
 
 Note that the position is always 1 less that order - i.e. the position is the array ordinal
 
-# UNSURE
+### UNSURE
 
 When you are sure of a letter but you got the position wrong, then you enter the info through this command.
 Suppose you guessed G to be the first letter - but you got a yellow color cell for it then you enter the info as follows
@@ -55,7 +55,7 @@ unsure G 0
 
 Note that the position is always 1 less that order - i.e. the position is the array ordinal
 
-# REDUCE
+### REDUCE
 
 You do this when you guessed a word correct and got position wrong and later you got the position correct for the same word. Suppose you guess Y as the first letter and you got the yellow colored cell - that indicates that Y is indeed in the word but the first letter is not its place. In a later attempt you guessed correctly that Y is in the last place.
 
@@ -70,7 +70,7 @@ unsure Y 4
 reduce
 ```
 
-# DISPLAY
+### DISPLAY
 
 This command displays the possibilities given the info that you entered through `sure`, `unsure` and `reduce`.
 Suppose you entered the following through CLI
@@ -102,7 +102,7 @@ _ N _ E U
 _ _ N E U
 ```
 
-# RESET
+### RESET
 
 Reset wipes any input that you had given and starts afresh - blank slate is what you get.
 You can start afresh your approach to a problem or switch to another problem swimmingly through this command.
@@ -112,7 +112,7 @@ Usage is
 reset
 ```
 
-# QUIT/LOGOUT/EXIT
+### QUIT/LOGOUT/EXIT
 
 Typing the following will let you out of this kiddish program.
 Usage
