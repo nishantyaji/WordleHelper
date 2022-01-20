@@ -1,6 +1,3 @@
-from operator import length_hint
-
-
 class Container:
 
     def __init__(self, len) -> None:
